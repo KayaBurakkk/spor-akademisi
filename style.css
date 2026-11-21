@@ -1,42 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
 body {
-  background-color: #f4f6f9;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f5;
+  color: #222;
+  line-height: 1.5;
 }
 
-.sidebar {
-  width: 240px;
-  background-color: #1e293b;
-  flex-shrink: 0;
+.ust-menu {
+  background-color: #1f2937;
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.sidebar .nav-link {
-  border-radius: 8px;
-  padding: 10px 14px;
-  transition: background-color 0.2s ease;
+.ust-menu nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
 }
 
-.sidebar .nav-link:hover,
-.sidebar .nav-link.active {
-  background-color: #334155;
-  color: #ffffff !important;
+.hero {
+  background-color: #196f3d;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
 }
 
-.stat-card {
-  border-radius: 12px;
-  transition: transform 0.2s ease;
+.hero p {
+  margin: 12px 0 22px;
 }
 
-.stat-card:hover {
-  transform: translateY(-3px);
+.buton {
+  display: inline-block;
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 15px;
 }
 
-.card {
-  border-radius: 12px;
+.icerik {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
 }
 
-.table thead th {
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  color: #64748b;
-  border-bottom-width: 1px;
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.kartlar {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.kart {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 18px;
+  flex: 1;
+  min-width: 240px;
+}
+
+.fiyat {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #196f3d;
+}
+
+.kontenjan {
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #196f3d;
+  color: #fff;
+}
+
+.form-kutusu {
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select {
+  padding: 9px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.mesaj {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #196f3d;
+}
+
+.liste {
+  margin-top: 10px;
+  padding-left: 20px;
 }
