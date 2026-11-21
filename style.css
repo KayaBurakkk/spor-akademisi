@@ -1,0 +1,42 @@
+body {
+  background-color: #f4f6f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #1e293b;
+  flex-shrink: 0;
+}
+
+.sidebar .nav-link {
+  border-radius: 8px;
+  padding: 10px 14px;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  background-color: #334155;
+  color: #ffffff !important;
+}
+
+.stat-card {
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+}
+
+.card {
+  border-radius: 12px;
+}
+
+.table thead th {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: #64748b;
+  border-bottom-width: 1px;
+}
